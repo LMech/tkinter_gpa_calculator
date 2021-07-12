@@ -25,7 +25,7 @@ def calc(textboxes, total_h=0, total_w=0):
     if (total_w <= 0):
         messagebox.showerror('Invalid values', 'Please, use valid values')
         
-    gpa = total_h/total_w
+    gpa = total_w/total_h
     total_p = total_h - int(textboxes[-1].get())
     gpa_label.configure(text=round(gpa, 2))
     total_label.configure(text=(total_p))
